@@ -1,0 +1,5 @@
+/.vs
+/WebApiTest/bin
+/WebApiTest/obj
+/WebApiTest.Tests/bin
+/WebApiTest.Tests/obj
