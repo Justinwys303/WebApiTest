@@ -1,0 +1,12 @@
+﻿<!DOCTYPE html>
+<div ng-controller="DetailsController">
+    <h2>{{movie.Title}}</h2>
+    <div>
+        Release in {{movie.ReleaseYear}}.
+    </div>
+    <div>
+        {{movie.Runtime}} minutes long.
+    </div>
+    <button ng-click="edit()">Edit</button>
+    <div ng-include="'/Client/views/edit.html'"></div>
+</div>

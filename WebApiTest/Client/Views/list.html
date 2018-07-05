@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<h4>List of Movie</h4>
+<div ng-controller="ListController">
+    <table>
+        <tr ng-repeat="movie in movies">
+            <td>{{movie.Title}}    </td>
+            <td>
+                <a class="btn btn-default" href="#!/details/{{movie.id}}">Details</a>
+                <button class="btn btn-default" ng-click="delete(movie)">Delete</button>
+            </td>
+        </tr>
+    </table>
+    <button class="btn btn-default" ng-click="create()">Create</button>
+    <div ng-include="'/Client/views/edit.html'"></div>
+</div>
